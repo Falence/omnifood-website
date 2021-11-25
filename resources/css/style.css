@@ -11,14 +11,16 @@
 html {
   background-color: #fff;
   color: #555;
-  font-family: 'Lato', 'Arial', sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 }
 
-.clearfix { zoom: 1; }
-.clearfix::after { 
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
   content: " ";
   clear: both;
   display: block;
@@ -70,7 +72,7 @@ h2 {
 
 h3 {
   font-size: 110%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 /* insert line with css after h2 */
@@ -91,7 +93,6 @@ h2::after {
   /* margin-left: 15%; */
   margin: 0 auto;
   text-align: center;
-
 }
 
 .box p {
@@ -99,13 +100,42 @@ h2::after {
   line-height: 145%;
 }
 
-/* ----- PARAGRAPHS ----- */
+/* ----- ICONS ----- */
 .icon-big {
   font-size: 350%;
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
   /* text-align: center; */
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+  /* align text and icons */
+  /* line-height: 120%; */
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+/* ----- LINKS ----- */
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 
 /* ----- BUTTONS ----- */
@@ -155,7 +185,8 @@ h2::after {
 
 header {
   /* CSS places linear gradient on top of the image*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/hero.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -285,7 +316,7 @@ header {
 .works-step div {
   color: #e67e22;
   border: 2px solid #e67e22;
-  display: inline-block ;
+  display: inline-block;
   border-radius: 50%;
   height: 55px;
   width: 55px;
@@ -296,8 +327,35 @@ header {
   font-size: 150%;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
 }
+
+/********************************************************/
+/* HOW IT WORKS */
+/********************************************************/
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-features {
+  margin-bottom: 5px;
+}
+
+/* .section-cities a:link,
+.section-cities a:active {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+} */
